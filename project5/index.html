@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Landing page</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="https://randomuser.me/api/portraits/thumb/men/77.jpg" alt="user">
+        </div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <button class="toggled" id="toggled">
+            <i class="fa fa-bars fa-2x"></i>
+        </button>
+        <h1>My Landing Page</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur, soluta.</p>
+        <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+    <!--MAin content-->
+    <div class="container">
+        <h2>What is AXIOM</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni rem ducimus, odio ea assumenda ut? In enim assumenda maiores quis. Commodi debitis veniam excepturi doloremque rem autem consequatur ea eligendi!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur et, doloremque voluptas recusandae facilis est fugiat exercitationem ut perspiciatis nemo.</p>
+        <h2>Learn More</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis aperiam, autem eos ea deserunt sunt minus blanditiis aliquam perferendis, quos quisquam quam qui, sapiente molestiae. Dolorum fugiat quia id repudiandae sint quaerat omnis est, error sequi tenetur aliquid dolor recusandae, ad aliquam labore! Quod, beatae ipsum quo vero voluptate culpa!</p>
+
+        <h2>Projects</h2>
+        <ul>
+            <li>Projects1</li>
+            <li>Projects2</li>
+            <li>Projects3</li>
+            <li>Projects4</li>
+            <li>Projects5</li>
+        </ul>
+        <!--modal-->
+        <div class="modal-container" id="modal">
+            <div class="modal">
+            <button class="close-btn" id="close">
+                <i class="fa fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h3>Sign up</h3>
+            </div>
+            <div class="modal-content">
+                <p>Register for classes</p>
+                <form  class="modal-form"> 
+                    <div>
+                        <label for="">Name</label>
+                        <input type="text" id="name" placeholder="Enter Name"/>
+                    </div>
+                    <div>
+                        <label for="">Email</label>
+                        <input type="email" id="email" placeholder="Enter Email"/>
+                    </div>
+                    <div>
+                        <label for="">Password</label>
+                        <input type="password" id="password" placeholder="Enter Password"/>
+                    </div>
+                    <div>
+                        <label for="">Cofirm password</label>
+                        <input type="password" id="password2" placeholder="Confirm Password"/>
+                        
+                    </div>
+                    <input type="submit" value="submit" class="submit-btn">
+               
+            
+                </form>
+            </div>   
+            </div>
+         </div>
+
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

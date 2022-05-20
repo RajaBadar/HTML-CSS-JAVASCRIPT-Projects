@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hangman Game</title>
+</head>
+<body>
+   <h1>Hangman</h1>
+   <!--instruction-->
+   <p>please use your keyboard to guess a letter and complete the hidden word </p>
+   <div class="container">
+       <!--hangman SVG-->
+       <svg class="hangman-container" height="250" width="200">
+            <line x1="60" y1="20" x2="140" y2="20" />
+            <line x1="140" y1="20" x2="140" y2="50" />
+            <line x1="60" y1="20" x2="60" y2="230" />
+            <line x1="20" y1="230" x2="100" y2="230" />
+            <!--hangman heads-->
+            <circle cx="140" cy="70" r="20" class="hangman-part" />
+            <!--hangman core-->
+            <line x1="140" y1="90" x2="140" y2="150" class="hangman-part"/>
+            <!--hangmans arm-->
+            <line x1="140" y1="100" x2="120" y2="140" class="hangman-part"/>
+            <line x1="140" y1="100" x2="160" y2="140" class="hangman-part"/>
+            <!--hangman legs-->
+            <line x1="140" y1="150" x2="120" y2="190" class="hangman-part"/>
+            <line x1="140" y1="150" x2="160" y2="190" class="hangman-part"/>
+
+       </svg>
+       <!--container for incorrect guess-->
+       <div class="incorrect-guesses-container">
+           <!--use JS to add incorrect letters here-->
+           <div  id="incorrect-letters">
+           
+           </div>
+
+       </div>
+       <!--this the main the wants to guess -->
+       <div class="word" id="word">
+           
+
+       </div>
+    </div>
+       <!--Game over container-->
+<div class="gameover-container" id="gameover-container">
+    <div class="popup">
+        <!--Message to display when game is finished-->
+        <!--<h2 class="gameover-message">Congrats you won!</h2>-->
+        <!--button to restart the game-->
+    <!--<button id="play-btn">Play Again</button>-->
+     </div>
+</div>
+
+<!--Notification conatainer-->
+<div class="notification-container " id="notification-container">
+    <p>you have already guessed this letter</p>
+</div>
+
+
+   
+    <script src="script.js"></script>
+</body>
+</html>
