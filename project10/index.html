@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="style.css">
+    <title>Infinite Scrolling App</title>
+</head>
+<body>
+    <h1>Badar News Feed</h1>
+    <!-- add input field for filtering content -->
+    <div class="filter-container" id="filter-container">
+        <input type="text" id="filter" placeholder="Filter content" class="filter">
+    </div>
+    <!-- section for news feed posts -->
+    <div class="news-feed-container" id="news-feed-container"></div>
+    <!-- this is the loader to display animation while api is fetching data -->
+    <div class="loader" id="loader">
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

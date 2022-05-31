@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Typing Game App</title>
+</head>
+<body>
+    
+    <!-- button element for game settiings -->
+    <button class="settings-btn" id="settings-btn">
+        <i class="fas fa-tools fa-2x"></i>
+    </button>
+
+    <!-- settings section -->
+    <div class="settings " id="settings">
+        <!-- form to get difficulty settings -->
+        <form  id="form">
+            <!-- difficulty settings -->
+            <label for="difficulty">Difficulty</label>
+            <select  id="difficult">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </form>
+    </div>
+    <!-- Game Container -->
+    <div class="container">
+        <!-- headings for player -->
+        <h2>Fast Typing Game</h2>
+        <!-- Instruction for player -->
+        <p>Type this word as fast as you can</p>
+        <!-- Word to type  -->
+        <h1 id="word"></h1>
+        <!-- input for user to tYpe the displayed word -->
+        <input type="text" id="user-word" placeholder="Please type Here" autocomplete="off" />
+         <!-- timer container -->
+        <p class="timer">
+            Time Remaining: <span id="time">60s</span>
+        </p>
+        <!-- score container -->
+        <p class="scorecard">
+            Score: <span id="score">0</span>
+        </p>
+    </div>
+
+   
+
+    <!-- End Game container -->
+    <div class="gameover" id="gameover"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
