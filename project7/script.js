@@ -98,7 +98,6 @@ function getFullDetails(mealID){
 
 
 
-
 //event listeners
 //1. listen for form submit
 submit.addEventListener('submit', searchMeal);
@@ -122,3 +121,5 @@ mealsElement.addEventListener('click', e =>{
         getFullDetails(mealID);
     }
 });
+//3.listen on click for randomly generate meal
+submit.addEventListener('click',randomMeal())
